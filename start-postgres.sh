@@ -1,0 +1,1 @@
+docker run -d --rm -p 5432:5432 -v load_file_pgdata:/var/lib/postgresql/data -v ~/src/blog/ways-to-load-a-file-to-postgres:/src --name load_file postgres -c max_connections=1000
